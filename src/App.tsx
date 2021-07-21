@@ -1,26 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { gql } from "@apollo/client";
+import React from "react";
+import { Chains, Subgraph, Subgraphs, TheGraphProvider, useCreateSubgraph, useSubgraph } from "thegraph-react";
 
-function App() {
+const styles ={
+  center: { alignItems: "center", justifyContent: "center" },
+};
+
+function Aave({ aave }: {
+  readonly aave: Subgraph,
+}): JSX.Element {
+  const { useQuery } = useSubgraph(aave);
+  const { error, loading, data } = useQuery(gql`
+  {
+    lendingPoolConfigurationHistoryItems(first: 5) {
+      id
+      provider {
+        id
+      }
+      lendingPool
+      lendingPoolCore
+    }
+    lendingPoolConfigurations(first: 5) {
+      id
+      lendingPool
+      lendingPoolCore
+      lendingPoolParametersProvider
+    }
+  }
+  `);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.center}>
+      {(error || loading) ? 'Loading...' : JSON.stringify(data)}
+
+      {/* {(error || loading) ? 'Loading...' : (
+        (JSON.stringify(data).map((d: any, i: number) => {
+          return (
+            <div key={i}>
+              {d}
+            </div>
+          )
+        })
+
+      )} */}
     </div>
   );
 }
 
-export default App;
+export default function App(): JSX.Element {
+  const aave = useCreateSubgraph({
+    [Chains.MAINNET]: 'https://api.thegraph.com/subgraphs/name/aave/protocol',
+  });
+
+  const subgraphs = React.useMemo((): Subgraphs => {
+    return [aave];
+  }, [aave]);
+
+  return (
+    <TheGraphProvider chain={Chains.MAINNET} subgraphs={subgraphs}>
+      <Aave aave={aave} />
+    </TheGraphProvider>
+  );
+}
