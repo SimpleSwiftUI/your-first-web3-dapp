@@ -41,29 +41,17 @@ function CryptoPunks({ cryptoPunks }: {
   const { useQuery } = useSubgraph(cryptoPunks);
   const { error, loading, data } = useQuery(gql`
   {
-    accounts(first: 5) {
+    nfts(where:{id: 500}) {
       id
-      nft {
-        id
-      }
-      nftsOwned {
-        id
-      }
-      wrappedPunksOwned {
-        id
-      }
-    }
-    nfts(first: 5) {
-      id
-      account {
-        id
-      }
-      transferedTo {
-        id
-      }
       assignedTo {
         id
       }
+      saleEvents {
+        id
+        amount
+      }
+      type
+      accessories
     }
   }
   `);
