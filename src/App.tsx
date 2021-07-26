@@ -41,7 +41,7 @@ function CryptoPunks({ cryptoPunks }: {
   const { useQuery } = useSubgraph(cryptoPunks);
   const { error, loading, data } = useQuery(gql`
   {
-    nfts(where:{id: 500}) {
+    nfts(where:{type: male}) {
       id
       assignedTo {
         id
