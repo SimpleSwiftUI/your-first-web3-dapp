@@ -2,38 +2,11 @@ import { gql } from "@apollo/client";
 import React from "react";
 import { Chains, Subgraph, Subgraphs, TheGraphProvider, useCreateSubgraph, useSubgraph } from "thegraph-react";
 
+
+
 const styles ={
   center: { alignItems: "center", justifyContent: "center" },
 };
-
-// function Aave({ aave }: {
-//   readonly aave: Subgraph,
-// }): JSX.Element {
-//   const { useQuery } = useSubgraph(aave);
-//   const { error, loading, data } = useQuery(gql`
-//   {
-//     lendingPoolConfigurationHistoryItems(first: 5) {
-//       id
-//       provider {
-//         id
-//       }
-//       lendingPool
-//       lendingPoolCore
-//     }
-//     lendingPoolConfigurations(first: 5) {
-//       id
-//       lendingPool
-//       lendingPoolCore
-//       lendingPoolParametersProvider
-//     }
-//   }
-//   `);
-//   return (
-//     <div style={styles.center}>
-//       {(error || loading) ? 'Loading...' : JSON.stringify(data)}
-//     </div>
-//   );
-// }
 
 function CryptoPunks({ cryptoPunks }: {
   readonly cryptoPunks: Subgraph
@@ -57,7 +30,15 @@ function CryptoPunks({ cryptoPunks }: {
   `);
 
   return (
-    <div style={styles.center}>
+    <div style={{...styles.center, padding: '20px'}}>
+      <div style={{width: '100%', textAlign: 'center'}}>
+        <select style={{fontSize: '20px', padding: '10px'}}>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select><br/><br/>
+      </div>
+
+
       {(error || loading) ? 'Loading...' : JSON.stringify(data)}
     </div>
   )
