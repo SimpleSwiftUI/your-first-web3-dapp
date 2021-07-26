@@ -24,7 +24,7 @@ function CryptoPunks({ cryptoPunks }: {
   
   return (
     <div style={{alignItems: "center", justifyContent: "center", padding: '20px'}}>
-      <div style={{flex: 1, flexDirection: 'row', display: 'flex', borderStyle: 'solid', borderWidth: '1px', padding: 20, borderRadius: 5, marginBottom: 40}}>
+      <div style={{flex: 1, flexDirection: 'row', display: 'flex', borderStyle: 'solid', borderWidth: '1px', borderColor: 'Background', padding: 20, borderRadius: 5, marginBottom: 40}}>
         <div style={{flex: 1, textAlign: 'left', }}>
           <h1>CryptoPunks Browser</h1>
         </div>
@@ -42,6 +42,8 @@ function CryptoPunks({ cryptoPunks }: {
       {(error || loading) ? (
         <blockquote><br/><br/>Loading...</blockquote>
         ) : (
+          
+
           (data as any).nfts.map((n: any, i: number) => {
             return (
               <div key={`nft-index-${i}`} style={{
@@ -51,6 +53,7 @@ function CryptoPunks({ cryptoPunks }: {
                 margin: 20,
                 borderWidth: '1px',
                 borderStyle: 'solid',
+                borderColor: 'ActiveBorder',
                 flexDirection: 'row',
                 display: 'flex',
                 borderRadius: 5
@@ -58,13 +61,9 @@ function CryptoPunks({ cryptoPunks }: {
                 <div style={{flex: 1, padding: 10, alignSelf: 'center', marginLeft: 25}}>
                   CryptoPunk id: <code>{getFullLengthId(n.id)}</code>
                 </div>
-
                 <div style={{flex: 1, padding: 10, alignSelf: 'center'}}>
                   <img 
-                    style={{
-                      width: '99px',
-                      imageRendering: '-moz-crisp-edges'
-                    }}
+                    style={{ width: '99px', imageRendering: '-moz-crisp-edges' }}
                     src={`https://www.larvalabs.com/public/images/cryptopunks/punk${getFullLengthId(n.id)}.png`} 
                     alt={`CryptoPunk #${getFullLengthId(n.id)}`} 
                   />
@@ -86,7 +85,6 @@ function CryptoPunks({ cryptoPunks }: {
                     <code style={{fontSize: 13.33}}>{n.assignedTo.id.toString()}</code>
                   </div>
                 </div>
-
               </div>
             )
           })
