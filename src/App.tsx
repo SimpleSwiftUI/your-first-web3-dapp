@@ -10,15 +10,11 @@ function CryptoPunks({ cryptoPunks }: {
 
   const { error, loading, data } = useQuery(gql`
     {
-      nfts(where: {type: ${type}}) {
+      nfts(where: {type: ${type}} ) {
       # nfts(where: {id: 8192}) {
         id
         assignedTo {
           id
-        }
-        saleEvents {
-          id
-          amount
         }
         type
         accessories
@@ -28,13 +24,10 @@ function CryptoPunks({ cryptoPunks }: {
   
   return (
     <div style={{alignItems: "center", justifyContent: "center", padding: '20px'}}>
-
-      <div style={{flex: 1, flexDirection: 'row', display: 'flex', borderStyle: 'solid', borderWidth: '1px', padding: 20}}>
-
+      <div style={{flex: 1, flexDirection: 'row', display: 'flex', borderStyle: 'solid', borderWidth: '1px', padding: 20, borderRadius: 5, marginBottom: 40}}>
         <div style={{flex: 1, textAlign: 'left', }}>
           <h1>CryptoPunks Browser</h1>
         </div>
-
         <div style={{textAlign: 'left', flex: 2, alignSelf: 'center'}}>
           <h3>Select type: <select style={{fontSize: '20px', padding: '10px'}} onChange={(e) => setType(e.currentTarget.value)}>
             <option value="male">Male</option>
@@ -44,7 +37,6 @@ function CryptoPunks({ cryptoPunks }: {
             <option value="zombie">Zombie</option>
           </select></h3>
         </div>
-
       </div>
 
       {(error || loading) ? (
@@ -60,14 +52,39 @@ function CryptoPunks({ cryptoPunks }: {
                 borderWidth: '1px',
                 borderStyle: 'solid',
                 flexDirection: 'row',
-                display: 'flex'
+                display: 'flex',
+                borderRadius: 5
               }}>
-                <div style={{flex: 1, padding: 10, alignSelf: 'center'}}>
-                  CryptoPunk id: <code>{n.id.toString()}</code>
+                <div style={{flex: 1, padding: 10, alignSelf: 'center', marginLeft: 25}}>
+                  CryptoPunk id: <code>{getFullLengthId(n.id)}</code>
                 </div>
 
-                <div style={{flex: 3, padding: 10}}>
-                  Accessories:<br/>{n.accessories.join(', ')}
+                <div style={{flex: 1, padding: 10, alignSelf: 'center'}}>
+                  <img 
+                    style={{
+                      width: '99px',
+                      imageRendering: '-moz-crisp-edges'
+                    }}
+                    src={`https://www.larvalabs.com/public/images/cryptopunks/punk${getFullLengthId(n.id)}.png`} 
+                    alt={`CryptoPunk #${getFullLengthId(n.id)}`} 
+                  />
+                </div>
+
+                <div style={{
+                  flex: 2,
+                  flexDirection: 'column',
+                  margin: 'auto',
+                  justifyContent: 'space-around'
+                }}>
+
+                  <div style={{flex: 1, padding: 10, alignSelf: 'center'}}>
+                    Accessories:<br/><code>{n.accessories.join(', ')}</code>
+                  </div>
+
+                  <div style={{flex: 1, padding: 10}}>
+                    Owner wallet public address:<br/>
+                    <code style={{fontSize: 13.33}}>{n.assignedTo.id.toString()}</code>
+                  </div>
                 </div>
 
               </div>
@@ -75,12 +92,18 @@ function CryptoPunks({ cryptoPunks }: {
           })
         )
       }
-
-
-
+      <br/><br/><span style={{fontSize: 14}}>&copy; 2021</span>
 
     </div>
   )
+}
+
+function getFullLengthId(id: number) {
+  const input = id.toString();
+  if (input.length === 1) return '000' + input;
+  if (input.length === 2) return '00' + input;
+  if (input.length === 3) return '0' + input;
+  return id.toString();
 }
 
 export default function App(): JSX.Element {
