@@ -121,3 +121,4 @@ Here are some suggestions to deepen your understanding of your dApp.
 
 _web3rb, 05-Aug-2021_
 
+[go](http://stackoverflow.com){:target="_blank"}
