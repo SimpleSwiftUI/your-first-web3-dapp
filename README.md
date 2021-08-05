@@ -1,6 +1,6 @@
 # Your first Web3 dApp: React app reading real Ethereum blockchain database
 
-Step-by-step guide to setting up and launching a TypeScript/React web app querying Ethereum blockchain data in standard querying language (GraphQL). Ethereum is basically just a big database. It contains a huge amount of information - live, valuable, insightful information. In this tutorial, you'll learn how to build (and optionally actually build) a simple Ethereum blockchain data browser. The example data is CryptoPunks. These are 8-bit digital art portraits. Their value is that they are unique digital assets with provable ownership verification. 
+Step-by-step guide to setting up and launching a TypeScript/React web app querying Ethereum blockchain data in standard querying language (GraphQL). Ethereum is basically just a big database. It contains a huge amount of information - live, valuable, insightful information. In this tutorial, you'll learn how to build (and optionally actually build) a simple Ethereum blockchain data browser. The example data is CryptoPunks. These are 8-bit digital art portraits. Their value is that they are unique digital assets with provable ownership verification. You can see a screenshot of the finished dApp at the bottom of this page.
 
 > Why Web3? Permissionless, uncensorable, native payments, Turing-complete. [(Learn more)](https://ethereum.org/en/developers/docs/web2-vs-web3/)
 
