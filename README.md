@@ -46,12 +46,16 @@ You made it. You will need to install NVM. This manages the installed versions o
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
-> (<a href="https://github.com/nvm-sh/nvm#installing-and-updating">Learn more about installing NVM</a>
+> <a href="https://github.com/nvm-sh/nvm#installing-and-updating">Learn more about installing NVM</a>
+
+&nbsp; 
 
 Now run `nvm install stable` to get the latest stable version of Node JS. 
 
 The installation should include the `npm` tool. If you encounter errors when running commands later, install tools <a href="https://kenanbek.medium.com/how-to-upgrade-nvm-npm-node-and-npx-97f927dddd22">here</a>. 
 - `npm`. Node Package Manager. Manage the project's libraries and tools with the `npm ...` command.
+
+&nbsp; 
 
 It's time to get the source code for the application. You will use Git to copy ("clone") the code for this tutorial. 
 ```
