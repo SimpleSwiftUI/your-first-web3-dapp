@@ -16,7 +16,7 @@ The tools you'll be using are all standard, mature, and easy to use. You'll see 
 - The Graph. This is a data indexing tool that simplifies access to data (the blockchain is basically just a massive database).
 - CryptoPunks. 8-bit digital art potraits. Unique digital assets.
 - GraphQL. This is the querying language optimizated for data efficiency. You'll learn the very basics here today.
-- `thegraph-react`. This library will allow communication with the The Graph service and the example code forms the basis for your example application. Thanks to author [cawfree](https://www.npmjs.com/package/thegraph-react).
+- `thegraph-react`. This library will allow communication with the The Graph service and the example code forms the basis for your example application. Thanks to author <a href="https://www.npmjs.com/package/thegraph-react" target="_blank">cawfree</a>.
 
 ## The basic architecture
 In the old world (Web 2.0), you had a client (mobile app or web browser) which requests and sends information to and from a server (powerful computer with a database). The server processes the data through the database and returns information to the client (the app/browser user). Lovely. 
@@ -38,19 +38,19 @@ Start with Microsoft VS Code. [This link]() will open a new tab where you can do
 
 In VS Code, open the Terminal/Console panel by hitting `Ctrl` + \` (or `Terminal` > `New Terminal` in the top menu). You need to navigate to the directory you just created. `File` > `Open` and browse your file directory until you find the directory you just created. 
 
-First you will download `curl` if you don't already have it. This is a terminal-based web browser. Go to [this website](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux) and come back here when you're done. 
+First you will download `curl` if you don't already have it. This is a terminal-based web browser. Go to <a href="https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux" target="_blank">this website</a> and come back here when you're done. 
 
-Welcome back. Next you'll install Git (pronounced git). This is a development tool for managing and backing up your code at regular intervals. Follow one of the options on [this page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and return back when done. 
+Welcome back. Next you'll install Git (pronounced git). This is a development tool for managing and backing up your code at regular intervals. Follow one of the options on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">[this page]</a> and return back when done. 
 
 You made it. You will need to install NVM. This manages the installed versions of Node JS. Node JS is the Javascript-based engine that runs the code you write. You will write in TypeScript and it will be automatically transpiled into Javascript. TypeScript makes coding significantly less error prone and more natural to read and write. It was developed by Microsoft. Run this command in the Terminal panel of VS Code.
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
-> ([Learn more about installing NVM](https://github.com/nvm-sh/nvm#installing-and-updating))
+> (<a href="https://github.com/nvm-sh/nvm#installing-and-updating" target="_blank">Learn more about installing NVM</a>
 
 Now run `nvm install stable` to get the latest stable version of Node JS. 
 
-The installation should include the `npm` tool. If you encounter errors when running commands later, install tools [here](https://kenanbek.medium.com/how-to-upgrade-nvm-npm-node-and-npx-97f927dddd22). 
+The installation should include the `npm` tool. If you encounter errors when running commands later, install tools <a href="https://kenanbek.medium.com/how-to-upgrade-nvm-npm-node-and-npx-97f927dddd22" target="_blank">here</a>. 
 - `npm`. Node Package Manager. Manage the project's libraries and tools with the `npm ...` command.
 
 It's time to get the source code for the application. You will use Git to copy ("clone") the code for this tutorial. 
@@ -63,7 +63,7 @@ If VS Code doesn't automatically open to the newly cloned project directory, cli
 Open up `package.json` and change the `name` value from `your-first-web3-dapp` to `cryptopunks-demo-dapp`. Thoughtfully observe the `dependencies`. These are the tools and libraries that power your application. You don't need to know how they work but they are open source if you'd like to explore/audit. 
 
 &nbsp; 
-> Optional: If you would like to back up your tutorial project on your own Git repository, [follow these instructions](https://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server).
+> Optional: If you would like to back up your tutorial project on your own Git repository, <a href="https://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server" target="_blank">follow these instructions</a>.
 
 &nbsp;
 
@@ -88,7 +88,7 @@ Now it's time to look at the code. The bulk of the application code is in `App.t
 - The `console.log()` prints information to the web browser console (see Developer Tools) for transparency into your application.
 - Everything in the `return()` block is the user interface (HTML5 code).
 - `getFullLengthId()` is a simple function to ensure all image ids are 4 characters long. (e.g. 0010 vs 10). This is how they are stored on the image server. (The images are not stored on the blockchain because the file size would make transactions expensive. A unique id is generated from the image content and that id is stored in the blockchain record forever.)
-- The final `App()` function sets up the connection to the CryptoPunks data access service in The Graph. To find other services, visit The Graph's [Graph Explorer]().
+- The final `App()` function sets up the connection to the CryptoPunks data access service in The Graph. To find other services, visit The Graph's <a href="https://thegraph.com/explorer" target="_blank">Graph Explorer</a>.
 
 ## Press Go
 
@@ -100,7 +100,7 @@ This will build (compile) the project code and launch the user interface automat
 
 You can see that the application has pulled the NFT's id number, owner's wallet address (personally identifiable if they choose), and the accessories that the CryptoPunk has. The accessories data is stored in `string` format in the Ethereum database record. (A block is a collection of verified records).  
 
-You can view the raw data that the `useQuery()` function is returning in your web browser's console (console = terminal). Expand the data object to view its contents. For instructions on opening the console view, [go here](https://balsamiq.com/support/faqs/browserconsole/).
+You can view the raw data that the `useQuery()` function is returning in your web browser's console (console = terminal). Expand the data object to view its contents. For instructions on opening the console view, <a href="https://balsamiq.com/support/faqs/browserconsole/" target="_blank">go here</a>.
 
 &nbsp;
 &nbsp; 
@@ -112,7 +112,7 @@ You can view the raw data that the `useQuery()` function is returning in your we
 # Some Optional Ideas for Further Exploration
 Here are some suggestions to deepen your understanding of your dApp.
 
-- **Beginner**: Play around with the GraphQL query. The Graph's Graph Explorer has a playground where you can build GraphQL queries on the CryptoPunks mainnet. [Go over there](https://thegraph.com/explorer/subgraph?id=0xf5abea69b5dd2e06fd93aaae19a61dd62e9866f9-0&view=Playground), build a query and then copy it to your application code. Then build a user interface to display the new data you've gathered. 
+- **Beginner**: Play around with the GraphQL query. The Graph's Graph Explorer has a playground where you can build GraphQL queries on the CryptoPunks mainnet. <a href="https://thegraph.com/explorer/subgraph?id=0xf5abea69b5dd2e06fd93aaae19a61dd62e9866f9-0&view=Playground" target="_blank">Go over there, build a query and then copy it to your application code. Then build a user interface to display the new data you've gathered. 
 - **Intermediate**: Build a new economy.
 
 
