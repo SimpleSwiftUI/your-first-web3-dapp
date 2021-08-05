@@ -11,7 +11,6 @@ function CryptoPunks({ cryptoPunks }: {
   const { error, loading, data } = useQuery(gql`
     {
       nfts(where: {type: ${type}} ) {
-      # nfts(where: {id: 8192}) {
         id
         assignedTo {
           id
@@ -21,6 +20,8 @@ function CryptoPunks({ cryptoPunks }: {
       }
     }
   `);
+
+  console.log('data from GQL query:', data);
   
   return (
     <div style={{alignItems: "center", justifyContent: "center", padding: '20px'}}>
