@@ -50,7 +50,7 @@ The installation should include the `npm` tool. If you encounter errors when run
 
 It's time to get the source code for the application. You will use Git to copy ("clone") the code for this tutorial. 
 ```
-git clone github.com/web3rb/your-first-dapp.git
+git clone https://github.com/web3rb/your-first-dapp.git
 ```
 
 If VS Code doesn't automatically open to the newly cloned project directory, click `File` > `Open` and navigate to it. The project root directory contains about 7 files/directories (`src`, `package.json`, `README.md`...).
