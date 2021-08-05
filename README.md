@@ -2,6 +2,8 @@
 
 Step-by-step guide to setting up and launching a TypeScript/React web app querying Ethereum blockchain data in standard querying language (GraphQL). Ethereum is basically just a big database. It contains a huge amount of information - live, valuable, insightful information. In this tutorial, you'll learn how to build (and optionally actually build) a simple Ethereum blockchain data browser. The example data is CryptoPunks. These are 8-bit digital art portraits. Their value is that they are unique digital assets with provable ownership verification. 
 
+> Why Web3? Permissionless, uncensorable, native payments, Turing-complete. [(Learn more)](https://ethereum.org/en/developers/docs/web2-vs-web3/)
+
 The guide below will assume you are building along at home, but just skip the `commands` if you're passing through. This guide is suitable for beginners; everything is explained from familiar terms. If you just want to get to the finished app, you can get there in 10 minutes; but it's recommended to slowly re-type everything and make mistakes so you start to internalize what's going on. 
 
  You need meaningful example data so that the operation of your web app becomes intuitive. You will be using CryptoPunks NFTs. Blockchain is useful for digital art because it makes the ownership of a digital asset provable and therefore valuable. NFT stands for Non-Fungible Token; it's the mechanism that proves ownership. This technology is in its early days and the application potential is big. You don't need any ETH cryptocurrency (Ξ) or browser plugins to participate in this tutorial.
