@@ -129,6 +129,6 @@ Here are some suggestions to deepen your understanding of your dApp.
 _web3rb, 05-Aug-2021_
 
 &nbsp; 
-![Figure 2. CryptoPunks Browser screenshot](/assets/images/cryptopunks-browser-screenshot.png)
+<kbd>![Figure 2. CryptoPunks Browser screenshot](/assets/images/cryptopunks-browser-screenshot.png)</kbd>
 
 &nbsp; 
