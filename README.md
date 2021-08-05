@@ -23,7 +23,7 @@ In the old world (Web 2.0), you had a client (mobile app or web browser) which r
 
 Web3 architecture, from a programming perspective, looks similar to the Web 2.0 architecture above. Refer to Figure 1 below.
 - The **client** is the almost the same. It is hosted the same way. The only difference is instead of calling a traditional web server with a traditional HTTP library, you use a new, easy-to-use Ethereum library (The Graph).
-- In Web3 language, the processor on the **server** is called a **smart contract**. In our example, the CryptoPunks NFT smart contract is the 'server' you are asking for information. The CryptoPunks smart contract is already hosted on the public blockchain so we don't need to pay any hosting fees ('deployment fees' in Web3??? gwei?). The GEWI??? for CryptoPunks was paid for by Larva Labs when they launched the project. 
+- In Web3 language, the processor on the **server** is called a **smart contract**. In our example, the CryptoPunks NFT smart contract is the 'server' you are asking for information. The CryptoPunks smart contract is already hosted on the public blockchain so we don't need to pay any fees. The gas (Ethereum transaction fee) for the CryptoPunks smart contract was paid for by Larva Labs when they launched the project. 
 - The **database** in our Web 2.0 example becomes the **Ethereum mainnet blockchain** - the real thing itself. (It's immutable so you won't be able to mess it up.) This is hosted globally with ennumerable back ups. Ethereum is an example of one of the many blockchain platforms emerging today. We are using it because that is what the The Graph version currently supports.
 
 &nbsp; 
@@ -32,7 +32,7 @@ Web3 architecture, from a programming perspective, looks similar to the Web 2.0 
 &nbsp; 
 
 ## Download the tools and code
-You need to create a directory/folder on your development computer ('local machine') for this project - your web app. You can do this with a [file explorer]() or [command line](). Something like `Documents/code/web3/next-facebook`.
+You need to create a directory/folder on your development computer ('local machine') for this project - your web app. You can do this with a [file explorer]() or [command line](). Something like `Documents/code/web3/the-next-facebook`.
 
 Start with Microsoft VS Code. [This link]() will open a new tab where you can download it. Just follow the defaults and turn off tracking. Once downloaded, open it.
 
@@ -55,7 +55,7 @@ The installation should include the `npm` tool. If you encounter errors when run
 
 It's time to get the source code for the application. You will use Git to copy ("clone") the code for this tutorial. 
 ```
-git clone https://github.com/web3rb/your-first-dapp.git
+git clone https://github.com/web3rb/your-first-web3-dapp.git
 ```
 
 If VS Code doesn't automatically open to the newly cloned project directory, click `File` > `Open` and navigate to it. The project root directory contains about 7 files/directories (`src`, `package.json`, `README.md`...). VS Code may ask you if you trust the author of the code in the directory; you do.
