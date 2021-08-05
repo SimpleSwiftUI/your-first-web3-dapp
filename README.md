@@ -117,7 +117,8 @@ You can view the raw data that the `useQuery()` function is returning in your we
 Here are some suggestions to deepen your understanding of your dApp.
 
 - **Beginner**: Play around with the GraphQL query. The Graph's Graph Explorer has a playground where you can build GraphQL queries on the CryptoPunks mainnet. <a href="https://thegraph.com/explorer/subgraph?id=0xf5abea69b5dd2e06fd93aaae19a61dd62e9866f9-0&view=Playground">Go over there</a>, build a query and then copy it to your application code. Then build a user interface to display the new data you've gathered. 
-- **Intermediate**: Build a new economy.
+- **Intermediate**: Find another subgraph you want to work with on the The Graph Explorer and build an app around that.
+- **Advanced**: Build a new economy.
 
 
 <br/>
