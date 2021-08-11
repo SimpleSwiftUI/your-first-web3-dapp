@@ -6,7 +6,7 @@ Step-by-step guide to setting up and launching a TypeScript/React web app queryi
 
 The guide below will assume you are building along at home, but just skip the `commands` if you're passing through. This guide is suitable for beginners; everything is explained from familiar terms. If you just want to get to the finished app, you can get there in 10 minutes; but it's recommended to slowly re-type everything and make mistakes so you start to internalize what's going on. 
 
- You need meaningful example data so that the operation of your web app becomes intuitive. You will be using CryptoPunks NFTs. Blockchain is useful for digital art because it makes the ownership of a digital asset provable and therefore valuable. NFT stands for Non-Fungible Token; it's the mechanism that proves ownership. This technology is in its early days and the application potential is big. You don't need any ETH cryptocurrency (Ξ) or browser plugins to participate in this tutorial.
+You need meaningful example data so that the operation of your web app becomes intuitive. You will be using CryptoPunks NFTs. Blockchain is useful for digital art because it makes the ownership of a digital asset provable and therefore valuable. NFT stands for Non-Fungible Token; it's the mechanism that proves ownership. This technology is in its early days and the application potential is big. You don't need any ETH cryptocurrency (Ξ) or browser plugins to participate in this tutorial.
 
 The tools you'll be using are all standard, mature, and easy to use. You'll see how to download them later.
 - The internet - however you get yours. 
@@ -15,7 +15,7 @@ The tools you'll be using are all standard, mature, and easy to use. You'll see 
 - Node JS. The engine that runs your web client on your local development computer.
 - TypeScript. Easy to understand programming language.
 - React. This is a library of tools that power a web app.
-- The Graph. This is a data indexing tool that simplifies access to data (the blockchain is basically just a massive database).
+- The Graph. This is a data indexing tool that simplifies access to data contained on the Ethereum blockchain.
 - CryptoPunks. 8-bit digital art potraits. Unique digital assets.
 - GraphQL. This is the querying language optimizated for data efficiency. You'll learn the very basics here today.
 - `thegraph-react`. This library will allow communication with the The Graph service and the example code forms the basis for your example application. Thanks to author <a href="https://www.npmjs.com/package/thegraph-react">cawfree</a>.
@@ -34,13 +34,13 @@ Web3 architecture, from a programming perspective, looks similar to the Web 2.0 
 &nbsp; 
 
 ## Download the tools and code
-You need to create a directory/folder on your development computer ('local machine') for this project - your web app. You can do this with a [file explorer]() or [command line](). Something like `Documents/code/web3/the-next-facebook`.
+You need to create a directory/folder on your development computer ('local machine') for this project - your web app. You can do this with a file explorer or [command line](https://www.computerhope.com/issues/ch000742.htm). Something like `Documents/code/web3/the-next-facebook`.
 
-Start with Microsoft VS Code. [This link]() will open a new tab where you can download it. Just follow the defaults and turn off tracking. Once downloaded, open it.
+Start with Microsoft VS Code. You can download it at [this link](https://code.visualstudio.com/download). Use `Ctrl-click`/`Cmd-click` to open link in new tab. Just follow the defaults and turn off tracking. Once downloaded, open it.
 
 In VS Code, open the Terminal/Console panel by hitting `Ctrl` + \` (or `Terminal` > `New Terminal` in the top menu). You need to navigate to the directory you just created. `File` > `Open` and browse your file directory until you find the directory you just created. 
 
-First you will download `curl` if you don't already have it. This is a terminal-based web browser. Go to <a href="https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux">this website</a> and come back here when you're done. Use `Ctrl-click`/`Cmd-click` to open link in new tab.
+First you will download `curl` if you don't already have it. This is a terminal-based web browser. Go to <a href="https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux">this website</a> and come back here when you're done. 
 
 Welcome back. Next you'll install Git (pronounced git). This is a development tool for managing and backing up your code at regular intervals. Follow one of the options on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">[this page]</a> and return back when done. 
 
