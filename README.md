@@ -9,8 +9,8 @@ The guide below will assume you are building along at home, but just skip the `c
 You need meaningful example data so that the operation of your web app becomes intuitive. You will be using CryptoPunks NFTs. Blockchain is useful for digital art because it makes the ownership of a digital asset provable and therefore valuable. NFT stands for Non-Fungible Token; it's the mechanism that proves ownership. This technology is in its early days and the application potential is big. You don't need any ETH cryptocurrency (Ξ) or browser plugins to participate in this tutorial.
 
 The tools you'll be using are all standard, mature, and easy to use. You'll see how to download them later.
-- The internet - however you get yours. 
-- The real Ethereum mainnet - live data from the entire Ethereum network (soon to be entire ERC20 network). You're just doing Read operations so we don't need any money. [Future tutorial on Write operations]
+- The internet. However you get yours. 
+- The real Ethereum mainnet. Live data from the entire Ethereum network (soon to be entire ERC20 network). You're just doing Read operations so we don't need any money. [Future tutorial on Write operations]
 - Microsoft VS Code. A fancy text editor.
 - Node JS. The engine that runs your web client on your local development computer.
 - TypeScript. Easy to understand programming language.
