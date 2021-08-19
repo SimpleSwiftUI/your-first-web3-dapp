@@ -42,7 +42,7 @@ In VS Code, open the Terminal/Console panel by hitting `Ctrl` + \` (or `Terminal
 
 First you will download `curl` if you don't already have it. This is a terminal-based web browser. Go to <a href="https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux">this website</a> and come back here when you're done. 
 
-Welcome back. Next you'll install Git (pronounced git). This is a development tool for managing and backing up your code at regular intervals. Follow one of the options on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">[this page]</a> and return back when done. 
+Welcome back. Next you'll install Git (pronounced git). This is a development tool for managing and backing up your code at regular intervals. Follow one of the options on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">this page</a> and return back when done. 
 
 You made it. You will need to install NVM. This manages the installed versions of Node JS. Node JS is the Javascript-based engine that runs the code you write. You will write in TypeScript and it will be automatically transpiled into Javascript. TypeScript makes coding significantly less error prone and more natural to read and write. It was developed by Microsoft. Run this command in the Terminal panel of VS Code.
 ```
