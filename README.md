@@ -48,7 +48,9 @@ You made it. You will need to install NVM. This manages the installed versions o
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-# The nvm installation process will give you an "export..." command (~3 lines long). Copy the 3 lines, paste them into the Terminal, and hit Enter. This command will make the nvm tool accessible to your Terminal.
+# The nvm installation process will give you an "export..." command (~3 lines long).
+# Copy the 3 lines, paste them into the Terminal, and hit Enter.
+# This command will make the nvm tool accessible to your Terminal.
 ```
 > <a href="https://github.com/nvm-sh/nvm#installing-and-updating">Learn more about installing NVM</a>
 
@@ -81,9 +83,12 @@ nvm use
 # If you get a message saying you need to install, follow the instructions.
 ```
 
-To install the dependencies needed for your project, return to the Terminal window and run:
+To install the dependencies needed for your project, return to the Terminal window.
 ```
-# Ensure your Terminal is focused on the directory that contains 'package.json'. You can check the content of the current directory with the "ls" command. You may need to enter "cd your-first-web3-dapp".
+# Ensure your Terminal is focused on the directory that contains 'package.json'.
+# You can check the content of the current directory with the "ls" command.
+# You may need to enter "cd your-first-web3-dapp" to switch directory (cd = change directory).
+# Then run the next line to install your project dependencies:
 npm install
 ```
 This will take a moment. 
