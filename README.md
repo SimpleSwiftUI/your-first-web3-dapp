@@ -47,6 +47,8 @@ Welcome back. Next you'll install Git (pronounced git). This is a development to
 You made it. You will need to install NVM. This manages the installed versions of Node JS. Node JS is the JavaScript-based engine that runs the code you write. You will write in TypeScript and it will be automatically transpiled into JavaScript. TypeScript makes coding significantly less error prone and more natural to read and write. It was developed by Microsoft. Run this command in the Terminal panel of VS Code.
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+# The nvm installation process will give you an "export..." command (~3 lines long). Copy the 3 lines, paste them into the Terminal, and hit Enter. This command will make the nvm tool accessible to your Terminal.
 ```
 > <a href="https://github.com/nvm-sh/nvm#installing-and-updating">Learn more about installing NVM</a>
 
@@ -76,18 +78,19 @@ Open up `package.json` and change the `name` value from `your-first-web3-dapp` t
 Ensure you are using the correct version of `npm` by running this `nvm use` to check the project's original build version in `.nvmrc`:
 ```
 nvm use
-If you get a message saying you need to install, follow the instructions.
+# If you get a message saying you need to install, follow the instructions.
 ```
 
 To install the dependencies needed for your project, return to the Terminal window and run:
 ```
+# Ensure your Terminal is focused on the directory that contains 'package.json'. You can check the content of the current directory with the "ls" command. You may need to enter "cd your-first-web3-dapp".
 npm install
 ```
 This will take a moment. 
 
 ## Thoughtfully observe the code
 
-Now it's time to look at the code. The bulk of the application code is in `App.tsx` (`tsx` is the language that lets you write HTML5 in TypeScript). 
+Now it's time to look at the code. The bulk of the application code is in `src/App.tsx` (`tsx` is the language that lets you write HTML5 in TypeScript). 
 - The first few lines are pulling in the infrastructure and library components needed.
 - The CryptoPunks `type` (`male`, `female`, `alien`, `ape`, or `zombie`) is stored in our React application's "`state`" using the `useState()` function. The `state` stores variables and triggers an update of all components that use the variable whenever the variable changes. 
 - Then the query is constructed in the `useQuery()` function. You'll learn more about this query later.
@@ -101,6 +104,7 @@ Now it's time to look at the code. The bulk of the application code is in `App.t
 It's time to run the application. Return to your Terminal panel and run:
 ```
 npm run start
+# You may be asked for permissions to access your web browser; you approve. 
 ```
 This will build (compile) the project code and launch the user interface automatically in a web browser tab. If the web browser tab doesn't open automatically, navigate to `http://localhost:3000/`. You will see the CryptoPunks Browser user interface. 
 
