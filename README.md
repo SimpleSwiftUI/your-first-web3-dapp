@@ -44,7 +44,7 @@ First you will download `curl` if you don't already have it. This is a terminal-
 
 Welcome back. Next you'll install Git (pronounced git). This is a development tool for managing and backing up your code at regular intervals. Follow one of the options on <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">this page</a> and return back when done. 
 
-You made it. You will need to install NVM. This manages the installed versions of Node JS. Node JS is the Javascript-based engine that runs the code you write. You will write in TypeScript and it will be automatically transpiled into Javascript. TypeScript makes coding significantly less error prone and more natural to read and write. It was developed by Microsoft. Run this command in the Terminal panel of VS Code.
+You made it. You will need to install NVM. This manages the installed versions of Node JS. Node JS is the JavaScript-based engine that runs the code you write. You will write in TypeScript and it will be automatically transpiled into Javascript. TypeScript makes coding significantly less error prone and more natural to read and write. It was developed by Microsoft. Run this command in the Terminal panel of VS Code.
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
