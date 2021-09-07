@@ -66,6 +66,8 @@ The installation should include the `npm` tool. If you encounter errors when run
 It's time to get the source code for the application. You will use Git to copy ("clone") the code for this tutorial. 
 ```
 git clone https://github.com/web3rb/your-first-web3-dapp.git
+# Once complete (few seconds), run this command to focus your terminal on the cloned directory:
+cd your-first-web3-dapp
 ```
 
 If VS Code doesn't automatically open to the newly cloned project directory, click `File` > `Open` and navigate to it. The project root directory contains about 7 files/directories (`src`, `package.json`, `README.md`...). VS Code may ask you if you trust the author of the code in the directory; you do.
@@ -85,10 +87,7 @@ nvm use
 
 To install the dependencies needed for your project, return to the Terminal window.
 ```
-# Ensure your Terminal is focused on the directory that contains 'package.json'.
-# You can check the content of the current directory with the "ls" command.
-# You may need to enter "cd your-first-web3-dapp" to switch directory (cd = change directory).
-# Then run the next line to install your project dependencies:
+# Run the next line to install your project dependencies:
 npm install
 ```
 This will take a moment. 
