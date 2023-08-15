@@ -10,7 +10,7 @@ You need meaningful example data so that the operation of your web app becomes i
 
 The tools you'll be using are all standard, mature, and easy to use. You'll see how to download them later.
 - The internet. However you get yours. 
-- The real Ethereum mainnet. Live data from the entire Ethereum network (soon to be entire ERC20 network). You're just doing Read operations so we don't need any money. [Future tutorial on Write operations]
+- The real Ethereum mainnet. Live data from the entire Ethereum network (soon to be entire ERC20 network). You're just doing Read operations so we don't need any money.
 - Microsoft VS Code. A fancy text editor.
 - Node JS. The engine that runs your web client on your local development computer.
 - TypeScript. Easy to understand programming language.
@@ -21,7 +21,7 @@ The tools you'll be using are all standard, mature, and easy to use. You'll see 
 - `thegraph-react`. This library will allow communication with the The Graph service and the example code forms the basis for your example application. Thanks to author <a href="https://www.npmjs.com/package/thegraph-react">cawfree</a>.
 
 ## The basic architecture
-In the old world (Web 2.0), you had a client (mobile app or web browser) which requests and sends information to and from a server (powerful computer with a database). The server processes the data through the database and returns information to the client (the app/browser user). Lovely. 
+In the old world (Web 2.0), you had a client (mobile app or web browser) which requests and sends information to and from a server (powerful computer with a database). The server processes the data through the database and returns information to the client (the app/browser user). 
 
 Web3 architecture, from a programming perspective, looks similar to the Web 2.0 architecture above. Refer to Figure 1 below.
 - The **client** is the almost the same. It is hosted the same way. The only difference is instead of calling a traditional web server with a traditional HTTP library, you use a new, easy-to-use Ethereum library (The Graph).
@@ -134,7 +134,6 @@ Here are some suggestions to deepen your understanding of your dApp.
 <br/>
 <br/> 
 
-_web3rb, 05-Aug-2021_
 
 &nbsp; 
 <kbd>![Figure 2. CryptoPunks Browser screenshot](/assets/images/cryptopunks-browser-screenshot.png)</kbd>
