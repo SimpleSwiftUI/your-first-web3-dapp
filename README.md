@@ -139,4 +139,4 @@ _web3rb, 05-Aug-2021_
 &nbsp; 
 <kbd>![Figure 2. CryptoPunks Browser screenshot](/assets/images/cryptopunks-browser-screenshot.png)</kbd>
 
-&nbsp; 
+&nbsp;&nbsp;
